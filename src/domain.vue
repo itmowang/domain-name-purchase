@@ -21,12 +21,17 @@
                     :class="{ 'cursor-not-allowed opacity-50': currentPage === totalPages }"
                     class="px-4 py-2 rounded-md bg-pink-600 text-white">下一页</button>
             </div>
+            <div class="mt-8 text-center">
+          <p>联系方式：</p>
+          <p>QQ: 1531780018</p>
+          <p>微信: mdzzvip</p>
+          <p>邮箱: mw@loli.wang</p>
+        </div>
         </div>
     </div>
 </template>
 
 <script>
-//   import domain from '/domain.json';
 export default {
     data() {
         return {
@@ -34,7 +39,7 @@ export default {
             searchQuery: '',
             currentPage: 1,
             pageSize: 8 // 每页显示的卡片数量
-        };
+        }; 
     },
     mounted() {
         this.fetchData();
